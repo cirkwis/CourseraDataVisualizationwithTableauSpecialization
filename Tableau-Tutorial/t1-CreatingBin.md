@@ -1,4 +1,4 @@
-# Exploring Data - Creating Bin
+# Exploring Data - Creating Bin and Exploring Distribution
 - What is a bin? 
   - **Dimension created from a measure**;
   - We take our continous measure with an unlimited number of possible values and we chunk it into discrete bins that have a limited set of values by size: **each discrete value (a bin) has a limited set of possibilities**
@@ -26,4 +26,8 @@
   ![t1-7](./t1-7.png "t1-7")
     - Tableau creates a new dimension and a new parameter:
   ![t1-8](./t1-8.png "t1-8")
-  
+  - Explore distribution of Sales: 
+    - Step 1: Drag "Number of records" in "Detail" and Create a new calculation
+  ![t1-9](./t1-9.png "t1-9")
+    - Tableau shows in the tooltip the information about distribution
+  ![t1-10](./t1-10.png "t1-10")
