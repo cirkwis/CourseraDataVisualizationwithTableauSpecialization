@@ -1104,6 +1104,26 @@
       </table>
       <simple-id uuid='{65FC6F79-C3B1-4A0B-9073-B0493C7559B7}' />
     </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1E56B547-77F5-4EFD-B190-0C01518AAC9E}' />
+    </worksheet>
     <worksheet name='Sub-Category Profit Ratios'>
       <table>
         <view>
@@ -1254,9 +1274,13 @@
             <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0mt214q01edu8712w03yv11u0po9].[Action (Region,Sub-Category)]'>
-            <groupfilter function='crossjoin' user:ui-action-filter='[Action4]' user:ui-enumeration='all' user:ui-marker='enumerate'>
-              <groupfilter function='level-members' level='[Region]' />
-              <groupfilter function='level-members' level='[Sub-Category]' />
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[Region]' member='&quot;Central&quot;' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[Sub-Category]' member='&quot;Appliances&quot;' />
+                <groupfilter function='member' level='[Sub-Category]' member='&quot;Binders&quot;' />
+                <groupfilter function='member' level='[Sub-Category]' member='&quot;Furnishings&quot;' />
+              </groupfilter>
             </groupfilter>
           </filter>
           <filter class='categorical' column='[federated.0mt214q01edu8712w03yv11u0po9].[none:Region:nk]'>
@@ -1781,7 +1805,7 @@
       </device-preview>
       <simple-id uuid='{D1852730-7596-4230-B3D9-023F2F000DBD}' />
     </window>
-    <window class='dashboard' maximized='true' name='Sub-Category Profit Ratios - Dashboard'>
+    <window class='dashboard' name='Sub-Category Profit Ratios - Dashboard'>
       <viewpoints>
         <viewpoint name='Sub-Category Profit Ratios'>
           <zoom type='entire-view' />
@@ -1790,8 +1814,31 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{0D795392-0E2A-4B83-BCD3-45AA3521A8CD}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AF8517FA-0376-4831-864A-3CFB12220FA6}' />
     </window>
   </windows>
 </workbook>

@@ -2,9 +2,11 @@
 
 **Tableau Public**: 
 [Coursera Final Assignment - Essential Design Principles for Tableau](https://public.tableau.com/profile/minh.hieu.pham#!/vizhome/w4-project/Sub-CategoryProfitRatios-Dashboard)
+https://public.tableau.com/profile/minh.hieu.pham#!/vizhome/w4-project/Sub-CategoryProfitRatios-Dashboard
 
 
 **Reference**: [Coursera Final Assignment - Essential Design Principles for Tableau](https://anthonysmoak.com/2017/04/09/essential-design-principles-for-tableau/) 
+https://anthonysmoak.com/2017/04/09/essential-design-principles-for-tableau/
 
 Recently completed *Essential Design Principles for Tableau* offered by the University of California Davis on Coursera, Here are some personal reviews. 
 
