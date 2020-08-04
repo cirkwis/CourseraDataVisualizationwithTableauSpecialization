@@ -28,6 +28,16 @@ For these reasons, I decide to use the Average Profit Ratio of the product in ea
 
 In order to complete the visualization, I incorporate nested sorting principles and also highlight the three worst performing elements on a bar chart.
 
+Firstly, let's drill down on sales
+
+![w-4-ex-0](./w-4-ex-0.png "w-4-ex-0")
+
+- Monthly sales: draw a selection box around points to drill down
+- Contributing categories: click on a box to drill down to subcategory and product
+- Average profit ratio
+
+Deep dive on average profit ratio by sub-categories 
+
 ![w-4-ex-1](./w-4-ex-1.png "w-4-ex-1")
 
 By selecting one or multiple sub-categories, the profit ratio time serie chart is also updated to anticipate next moves in sales based on trends.
