@@ -834,6 +834,17 @@
               <bucket>&quot;Home Office&quot;</bucket>
             </map>
           </encoding>
+          <encoding attr='color' field='[none:Category:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Furniture&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Technology&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Office Supplies&quot;</bucket>
+            </map>
+          </encoding>
           <encoding attr='color' field='[none:Region:nk]' type='palette'>
             <map to='#86bcb6'>
               <bucket>&quot;West&quot;</bucket>
@@ -846,17 +857,6 @@
             </map>
             <map to='#fabfd2'>
               <bucket>&quot;Central&quot;</bucket>
-            </map>
-          </encoding>
-          <encoding attr='color' field='[none:Category:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;Furniture&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;Technology&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Office Supplies&quot;</bucket>
             </map>
           </encoding>
         </style-rule>
@@ -2110,8 +2110,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='88' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='87' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='94' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='93' param='vert' w='98400' x='800' y='1000'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='6125' id='9' w='84600' x='800' y='1000'>
                   <formatted-text>
                     <run bold='true' fontsize='15'>Key Sales and Profits Metrics by Product Category</run>
@@ -2429,10 +2429,10 @@
             <card type='rows' />
           </strip>
           <strip size='2147483647'>
-            <card type='title' />
+            <card type='columns' />
           </strip>
           <strip size='2147483647'>
-            <card type='columns' />
+            <card type='title' />
           </strip>
         </edge>
       </cards>
@@ -2445,7 +2445,7 @@
       </viewpoint>
       <simple-id uuid='{869B123D-94E7-4411-8E44-938365AE9C2A}' />
     </window>
-    <window class='worksheet' maximized='true' name='Discounts by profit ratio'>
+    <window class='worksheet' name='Discounts by profit ratio'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2530,7 +2530,7 @@
       </viewpoint>
       <simple-id uuid='{9086972A-4A24-4EC2-BF3D-1474EB83CD6C}' />
     </window>
-    <window class='dashboard' name='Key Sales and Profits Metrics by Product Category'>
+    <window class='dashboard' maximized='true' name='Key Sales and Profits Metrics by Product Category'>
       <viewpoints>
         <viewpoint name='Discounts by profit ratio'>
           <zoom type='entire-view' />
